@@ -7,13 +7,15 @@ au BufNewFile,BufRead *.py
     \| set autoindent 
     \| set fileformat=unix
 
-au BufNewFile,BufRead *.js,*.html,*.css 
+au BufNewFile,BufRead *.js,*.html,*.css,*.sh
     \ set tabstop=2 
     \| set softtabstop=2 
     \| set shiftwidth=2
+    \| set expandtab
 
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
+set hlsearch
 set number
 set encoding=utf-8
 set nocompatible              " required
@@ -21,6 +23,15 @@ filetype off                  " required
 set splitbelow
 set splitright
 set clipboard=unnamed
+
+map ; :NERDTreeToggle<CR>
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -49,12 +60,13 @@ EOF
 let python_highlight_all=1
 syntax on
 
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme zenburn
-endif
+set background=dark
+"if has('gui_running')
+"  set background=dark
+"  colorscheme solarized
+"else
+"  colorscheme zenburn
+"endif
 syntax enable
 so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
 call togglebg#map("<F5>")
@@ -68,6 +80,15 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+Plugin 'dense-analysis/ale'
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let b:ale_linters = ['flake8', 'pylint']
+let b:ale_fixers = ['autopep8', 'yapf']
+let g:ale_list_window_size = 5
+let g:ale_open_list = 1
 
 Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
