@@ -1,6 +1,6 @@
-# Practical Personal Configurations
+# The Way Geeks Configure It
 ## 1. Vim
-Custom Python-Specialized Vim Configuration
+Here it is a Python-Specialized Vim Configuration.
 
 ### How to set-up
 1. After cloning repository, copy '.vimrc' file to your home directory with below command:
@@ -12,7 +12,7 @@ cp /path/to/the/repository/.vimrc ~/.vimrc
 4. enjoy :)
 
 ## 2. Tmux
-Support easy moving between different panes
+Support easy moving between different panes with pressing Alt+b and after that pressing one of k, j, l, h (vim-style) for varient oriententions.
 
 ### How to set-up
 1. Install [Tmux](https://github.com/tmux/tmux)
@@ -23,7 +23,7 @@ cp /path/to/the/repository/.tmux.conf ~/.tmux.conf
 3. Ta-Da :)
 
 ## 3. Oh My Zsh
-Awesome configurations! 
+Just Awesome configurations!
 
 ### How to set-up
 1. Install [Zsh (Z shell)](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
