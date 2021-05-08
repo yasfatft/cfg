@@ -9,7 +9,9 @@ cp /path/to/the/repository/.vimrc ~/.vimrc
 ```
 2. Install [Vim-plug](https://github.com/junegunn/vim-plug).
 3. excute ```:PlugInstall``` in vim enviroment.
-4. enjoy :)
+4. Install [Vundle](https://github.com/VundleVim/Vundle.vim).
+5. excute ```:PluginInstall``` in vim enviroment.
+6. enjoy :)
 
 ## 2. Tmux
 Support easy moving between different panes with hotkeys [Alt+b] -> [k|j|l|h] (vim-style) for varient oriententions.
