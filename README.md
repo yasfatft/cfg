@@ -31,7 +31,7 @@ While working with the shell, I usually do git, docker, and edit-related command
 1. Install [Zsh (Z shell)](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
 2. Install [Oh My Zsh](https://ohmyz.sh).
 3. Here there are some plugin & packages which I had installed too (you can either install them or remove corressponding config lines from Oh My Zsh config file): 
-- [history-substring-search](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - command-not-found apt package (```apt install command-not-found```) 
