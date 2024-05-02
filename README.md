@@ -35,7 +35,6 @@ While working with the shell, I usually do git, docker, and edit-related command
 - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - command-not-found apt package (```apt install command-not-found```) 
-- [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest)
 4. After cloning the repo, copy the '.zshrc' file to your home directory:
 ```
 cp /path/to/the/repository/.zshrc ~/.zshrc
