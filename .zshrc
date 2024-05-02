@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,8 +71,7 @@ ZSH_THEME="bira"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-	zsh-syntax-highlighting
-	history-substring-search)
+	zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,12 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# configure python path to virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-# load virtualenvwrapper's commands
-source /usr/local/bin/virtualenvwrapper.sh
 
 source /etc/zsh_command_not_found  
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
